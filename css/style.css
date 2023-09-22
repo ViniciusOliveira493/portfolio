@@ -1,0 +1,280 @@
+:root{
+
+    --transp-black:rgba(0, 0, 0, 0.7);
+    --white:white;    
+    
+    --card-border: red;
+    --card-icons-bg:black;
+    --link-hightlight:white;
+
+    --white-text:white;
+    --black-text:black;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+    min-width: 100%;
+    min-height: 50px;
+    background-color: orange;
+    padding: 5px 20px;
+    position: fixed;
+    top: 0;
+    z-index: 20;
+}
+
+header > h1{
+    padding-top: 5px;
+    display: inline-block;
+}
+
+header > ul{
+    float: right;
+    margin-right: 2em;
+    padding-top: 15px;
+}
+
+header > ul > li{
+    display: inline-block;
+    list-style-type: none;
+    margin-right: 1em;
+}
+
+header > ul > li > a{
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: bold;
+    color: black;
+}
+
+header > ul > li > a:hover{
+    text-decoration: underline;
+    color: var(--white-text);
+}
+
+main{
+    width: 90%;
+    margin: auto;
+}
+
+main > section{
+    min-width: 100%;
+    min-height: 50vh;
+    background-color: green;
+    margin: 15% 0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+main > section > *{
+    min-height: 100%;
+}
+
+section > h1{
+    text-align: center;
+    margin-top: 5px;
+}
+
+footer{
+    color: var(--white-text);
+    background-color: black;
+    text-align: center;
+    height: 50px;
+    width: 100%;
+}
+.none{
+    display: none;
+}
+.circle{
+    border-radius: 50%;
+}
+
+.img{
+    margin: auto;
+    margin-top: 2%;
+    width: 250px;
+    height: 250px;
+    background-color: rgb(0, 255, 34);
+    transform: translateY(15%);
+    display: block;
+    
+}
+
+#secApresentacao > section{
+    width: 50%;
+    display: inline-block;
+    float: right;
+}
+
+#photoSection{
+    min-height: 100%;
+}
+
+#txtApresentacao{
+    overflow-y: auto !important; 
+}
+
+#txtApresentacao > p,div{
+    padding: 1em;
+}
+
+#cardConteiner{
+    width: 90%;
+    margin: auto;
+}
+
+.card{
+    width: 250px;
+    height: 300px;
+    background-color: black;
+    border-radius: 20px;
+    padding: 0;
+    padding-top: 2px;
+    text-align: left;
+    overflow: hidden;
+    display: inline-block;
+    margin: 0 10px 10px auto;
+}
+
+.typeIcon{
+    display: block;
+    padding-left: .5em;
+    font-size: 1.5em;
+    font-weight: bold;
+    background-color: var(--card-border);
+    padding-top: 5px;
+    transform: translateY(-5px);
+}
+
+.descricao{
+    padding: 0;
+    height: 80%;
+    transform: translateY(-5px);
+}
+
+.descricao:hover{
+    background-color: var(--transp-black);
+    color: var(--white-text);
+}
+
+.descricao > div{
+    display: none;
+}
+
+.descricao:hover > div{
+    display: inline-block;
+    float: left;
+}
+
+.descricao > .tecIcons{
+    width: 3%;
+    height: 100%;
+    background-color: var(--card-icons-bg);
+    overflow: hidden;    
+}
+
+.tecIcons > span{
+    display: block;
+    font-size: 1.2em;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    transform: translateX(-10px);
+}
+
+.descricao > .descText{
+    width: 70%;
+    padding: 0;
+    padding-left: 5px;
+    overflow: hidden;
+}
+
+.cardLinks{
+    padding: 8px 0;
+    width: 100%;
+    background-color: var(--card-border);
+    transform: translateY(-5px);    
+}
+
+.cardLinks a{ 
+    padding: 0 5%;
+    text-decoration: none;
+    color: var(--black-text);
+    font-weight: bolder;
+    font-size: 1.3em;
+}
+
+.cardLinks > div{
+    margin: 0;
+    padding: 0;
+    margin: auto;
+    width: 70%;
+    text-align: center;
+}
+
+.cardLinks a:hover{ 
+    color: var(--link-hightlight);
+    text-decoration: underline;
+}
+
+@media (max-width:715px) {
+    #secApresentacao > section{
+        display: block;
+        width: 100%;
+        float: none;
+    }
+
+    .card{
+        width: 48%;
+    }
+    .img{
+        transform: translateY(0%);
+        width: 250px;
+        height: 250px; 
+    }
+
+    main{
+        margin-top: 25%;
+    }
+}
+
+@media (max-width:600px) {    
+    #menu{
+        display: none;
+    }
+
+    .card{
+        width: 100%;
+    }
+
+    .descricao:active > div{
+        display: inline-flex;
+    }
+
+    .descricao:active{
+        background-color: var(--transp-black);
+        color: var(--white-text);
+    }
+
+}
+
+@media (max-width:330px) {    
+    header > h1{
+        font-size: 1.3em;
+    }
+
+    header > ul  > li > a{
+        font-size: 1em;
+    }
+
+    .img{
+        width: 200px;
+        height: 200px;        
+    }
+}
