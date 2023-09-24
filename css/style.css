@@ -223,6 +223,25 @@ footer{
     text-decoration: underline;
 }
 
+#secFormacoes{
+    padding: 1em;
+}
+
+#secFormacoes .formacao {
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+
+#secFormacoes span{
+    display: block;
+    margin-bottom: 5px;
+}
+
+#secFormacoes > #listaFormacoes{
+    overflow-y: auto;
+}
+
 @media (max-width:715px) {
     #secApresentacao > section{
         display: block;

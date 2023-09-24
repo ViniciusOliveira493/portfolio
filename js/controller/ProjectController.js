@@ -6,6 +6,10 @@ class ProjectController{
 
     async findAll(){
         let lista = await this.dao.findAll();
-        return lista;
+        return this.orderByPriority(lista);
+    }
+
+    orderByPriority(data){
+        return data.sort((a,b) => b.priority-a.priority);
     }
 }
