@@ -1,29 +1,44 @@
 :root{
+    --color-1:#013566;
+    --color-2:#1F93FF;
+    --color-3:#045EB3;
+    --color-4:#663F00;
+    --color-5:#B37004;
+
+
+    --color-1-t:rgba(1, 53, 102, 0.05);
 
     --transp-black:rgba(0, 0, 0, 0.7);
     --white:white;    
     
-    --card-border: red;
+    --card-border: var(--color-2);
     --card-icons-bg:black;
-    --link-hightlight:white;
+
+    --link-hightlight-black:white;
+    --link-hightlight-white:black;
 
     --white-text:white;
     --black-text:black;
 }
-
 *{
-    margin: 0;
-    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 html{
     scroll-behavior: smooth;
 }
 
+body{
+    background-color: whitesmoke;
+    margin:0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
 header{
     min-width: 100%;
     min-height: 50px;
-    background-color: orange;
+    background-color: var(--color-3);
     padding: 5px 20px;
     position: fixed;
     top: 0;
@@ -33,12 +48,15 @@ header{
 header > h1{
     padding-top: 5px;
     display: inline-block;
+    color: var(--white-text);
+    margin: 0;
 }
 
 header > ul{
     float: right;
     margin-right: 2em;
     padding-top: 15px;
+    margin: 0 1em;
 }
 
 header > ul > li{
@@ -51,12 +69,12 @@ header > ul > li > a{
     text-decoration: none;
     font-size: 1em;
     font-weight: bold;
-    color: black;
+    color: var(--white-text);
 }
 
 header > ul > li > a:hover{
     text-decoration: underline;
-    color: var(--white-text);
+    color: var(--black-text);
 }
 
 main{
@@ -65,11 +83,12 @@ main{
 }
 
 main > section{
-    min-width: 100%;
     min-height: 50vh;
-    background-color: green;
+    background-color: var(--color-1-t);
+    box-shadow: 7px 10px 10px 5px rgba(14, 0, 0, 0.4);
     margin: 15% 0;
-    border-radius: 10px;
+    padding: 1em;
+    border-radius: 20px;
     overflow: hidden;
 }
 
@@ -77,18 +96,11 @@ main > section > *{
     min-height: 100%;
 }
 
-section > h1{
+section > .titulo{
     text-align: center;
     margin-top: 5px;
 }
 
-footer{
-    color: var(--white-text);
-    background-color: black;
-    text-align: center;
-    height: 50px;
-    width: 100%;
-}
 .none{
     display: none;
 }
@@ -101,10 +113,16 @@ footer{
     margin-top: 2%;
     width: 250px;
     height: 250px;
-    background-color: rgb(0, 255, 34);
     transform: translateY(15%);
     display: block;
     
+}
+
+.minhaFoto{
+    background-image: url("https://media.licdn.com/dms/image/C4D03AQHodiaEmnveUg/profile-displayphoto-shrink_800_800/0/1562458642144?e=2147483647&v=beta&t=Hpe-PePilva1s2zG0X-nCKthQ-67_SgG5eRofMiIUCQ");
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 #secApresentacao > section{
@@ -118,11 +136,38 @@ footer{
 }
 
 #txtApresentacao{
-    overflow-y: auto !important; 
+    overflow-y: auto !important;
+    text-align: justify;
+    text-indent: 1em;
 }
 
-#txtApresentacao > p,div{
+#txtApresentacao > h1{
+    padding: 0em 1em;
+    margin: .5em 0;
+    font-size: 3em;
+}
+
+#txtApresentacao > p div{
     padding: 1em;
+    color: var(--black-text) !important;
+}
+
+#txtApresentacao > p{
+    font-size: 1.5em;
+}
+#divTecnologias > h1{
+    margin: 0;
+    margin-top: 1em;
+}
+
+#divTecnologias abbr{
+    text-decoration: none;
+    cursor: help;
+    margin: 0 5px;
+}
+
+#divTecnologias span{
+    font-size: 2.5em;   
 }
 
 #cardConteiner{
@@ -132,7 +177,7 @@ footer{
 
 .card{
     width: 250px;
-    height: 300px;
+    height: 350px;
     background-color: black;
     border-radius: 20px;
     padding: 0;
@@ -141,12 +186,17 @@ footer{
     overflow: hidden;
     display: inline-block;
     margin: 0 10px 10px auto;
+    background-size:cover;
+    background-position: center;
+    background-repeat:no-repeat;
+    color: var(--white-text);
+    cursor: none;
 }
 
 .typeIcon{
     display: block;
     padding-left: .5em;
-    font-size: 1.5em;
+    font-size: 1.3em;
     font-weight: bold;
     background-color: var(--card-border);
     padding-top: 5px;
@@ -171,6 +221,7 @@ footer{
 .descricao:hover > div{
     display: inline-block;
     float: left;
+    padding: 1em;
 }
 
 .descricao > .tecIcons{
@@ -189,25 +240,35 @@ footer{
 }
 
 .descricao > .descText{
-    width: 70%;
-    padding: 0;
+    width: 78%;
+    padding: .3em !important;
     padding-left: 5px;
     overflow: hidden;
+    text-align: justify;
 }
 
 .cardLinks{
-    padding: 8px 0;
+    padding: 10px 0;
+    padding-bottom: 15px;
     width: 100%;
     background-color: var(--card-border);
-    transform: translateY(-5px);    
+    transform: translateY(-5px);   
+
 }
 
 .cardLinks a{ 
     padding: 0 5%;
     text-decoration: none;
-    color: var(--black-text);
+    color: var(--white-text);
     font-weight: bolder;
-    font-size: 1.3em;
+    font-size: 1.2em;
+    
+}
+
+@-moz-document url-prefix() {
+    .cardLinks a{ 
+        font-size: 1em;    
+    }
 }
 
 .cardLinks > div{
@@ -219,18 +280,22 @@ footer{
 }
 
 .cardLinks a:hover{ 
-    color: var(--link-hightlight);
+    color: var(--link-hightlight-white);
     text-decoration: underline;
 }
 
 #secFormacoes{
     padding: 1em;
+    max-height: 50vh;
 }
 
 #secFormacoes .formacao {
     border: 1px solid black;
     border-radius: 10px;
     margin-bottom: 5px;
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 1em;
+    
 }
 
 #secFormacoes span{
@@ -240,6 +305,53 @@ footer{
 
 #secFormacoes > #listaFormacoes{
     overflow-y: auto;
+    max-height: 40vh;
+}
+
+footer{
+    background-color: black;
+    padding: 1em;
+    height: 50px;
+    width: 100%;
+    
+}
+
+footer > div {
+    width: 45%;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    float: left;
+    
+}
+
+footer > div > a {
+    color: var(--white-text);
+    display: block;
+    text-decoration: none;
+    margin: 1px 0;
+    margin-right: 5px;
+    font-size: 1.1em;
+}
+
+footer > div > p {
+    color: var(--white-text);
+    display: block;
+    text-decoration: none;
+    margin: 0;
+    margin-right: 5px;
+    font-size: 1.1em;
+}
+
+footer a:hover {
+    color: var(--color-2);
+    text-decoration: underline;
+    display: block;
+    
+}
+
+.material-symbols-outlined {
+    font-size: medium !important;
 }
 
 @media (max-width:715px) {
@@ -251,6 +363,9 @@ footer{
 
     .card{
         width: 48%;
+        background-size:cover;
+        background-position: center;
+        background-repeat:no-repeat;
     }
     .img{
         transform: translateY(0%);

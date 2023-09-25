@@ -17,16 +17,35 @@ class Project{
         let card = document.createElement("div");
         card.setAttribute("class","card");
         card.setAttribute("style",
-            "background-image: url("+this.image+");"
-            +"background-size:100% 100%;"
-            +"background-repeat:no-repeat;"
+            "background-image: url(./img/"+this.image+");"
             )
         
         let title = document.createElement("span");
         title.setAttribute("class","typeIcon");
 
         let icon = "&lt;/&gt;";
-        title.innerHTML = icon + " - "+this.name;
+        icon = document.createElement("span");
+        icon.setAttribute("class","material-symbols-outlined");
+
+        switch (this.type) {
+            case "game":
+                icon.innerHTML = "videogame_asset";
+            break;
+    
+            case "back":
+                icon.innerHTML = "dns";
+            break;
+
+            case "database":
+                icon.innerHTML = "database";
+            break;
+            default:
+                icon.innerHTML = "web";
+                break;
+        }
+        
+        title.appendChild(icon);
+        title.append(" - "+this.name);
 
         card.appendChild(title);
 
@@ -58,18 +77,22 @@ class Project{
 
         let linksD = document.createElement("div");
 
-        let git = document.createElement("a");
-        git.setAttribute("href","http://"+this.gitLink);
-        git.setAttribute("target","_blank");
-        git.innerHTML = "Github";
+        if(this.gitLink!=""){
+            let git = document.createElement("a");
+            git.setAttribute("href","http://"+this.gitLink);
+            git.setAttribute("target","_blank");
+            git.innerHTML = "Github";
 
-        let visit = document.createElement("a");
-        visit.setAttribute("href","http://"+this.deployLink);
-        visit.setAttribute("target","_blank");
-        visit.innerHTML = "Ver Site";
+            linksD.appendChild(git);
+        }
 
-        linksD.appendChild(git);        
-        linksD.appendChild(visit);
+        if(this.deployLink!=""){
+            let visit = document.createElement("a");
+            visit.setAttribute("href","http://"+this.deployLink);
+            visit.setAttribute("target","_blank");
+            visit.innerHTML = "Ver Site";
+            linksD.appendChild(visit);
+        }
 
         links.appendChild(linksD);
         card.appendChild(links);

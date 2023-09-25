@@ -3,23 +3,37 @@
         {
             "name":"Análise e Desenvolvimento de Sistemas"
             ,"institution":"Fatec Zona Leste"
-            ,"startDate":"Agosto de 2020"
+            ,"startDate":"Agosto 2020"
             ,"endDate":"Dezembro 2023"
             ,"priority":10
         }
         ,{
             "name":"Técnico em Desenvolvimento de Sistemas"
             ,"institution":"ETEC de Guaianazes"
-            ,"startDate":"Agosto de 2019"
+            ,"startDate":"Agosto 2019"
             ,"endDate":"Dezembro 2019"
             ,"priority":9.99
         }
         ,{
             "name":"Técnico em Informática"
             ,"institution":"ETEC de Guaianazes"
-            ,"startDate":"Janeiro de 2018"
+            ,"startDate":"Janeiro 2018"
             ,"endDate":"Junho 2019"
             ,"priority":9.98
+        }
+        ,{
+            "name":"Aprenda sobre S.O.L.I.D. com Java"
+            ,"institution":"DIO"
+            ,"startDate":""
+            ,"endDate":""
+            ,"priority":0
+        }
+        ,{
+            "name":"Versionamento de Código com Git e GitHub"
+            ,"institution":"DIO"
+            ,"startDate":""
+            ,"endDate":""
+            ,"priority":0
         }
     ]
 }

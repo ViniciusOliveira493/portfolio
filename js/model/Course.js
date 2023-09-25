@@ -20,7 +20,10 @@ class Course{
 
        div.appendChild(span1);
        div.appendChild(span2);
-       div.appendChild(span3);
+
+       if(this.startDate!=""){
+        div.appendChild(span3);
+       }
 
        return div;
     }
