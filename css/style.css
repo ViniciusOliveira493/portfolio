@@ -190,7 +190,7 @@ section > .titulo{
     background-position: center;
     background-repeat:no-repeat;
     color: var(--white-text);
-    cursor: none;
+    cursor: help;
 }
 
 .typeIcon{

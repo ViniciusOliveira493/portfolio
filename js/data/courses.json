@@ -22,6 +22,13 @@
             ,"priority":9.98
         }
         ,{
+            "name":"Curso de Robótica"
+            ,"institution":"ETEC de Guaianazes"
+            ,"startDate":"Junho 2018"
+            ,"endDate":"Junho 2019"
+            ,"priority":9.97
+        }
+        ,{
             "name":"Aprenda sobre S.O.L.I.D. com Java"
             ,"institution":"DIO"
             ,"startDate":""
