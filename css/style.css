@@ -311,6 +311,7 @@ section > .titulo{
 footer{
     background-color: black;
     padding: 1em;
+    padding-bottom: 2em;
     height: 50px;
     width: 100%;
     
