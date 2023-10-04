@@ -6,10 +6,10 @@
     --color-5:#B37004;
 
 
-    --color-1-t:rgba(1, 53, 102, 0.05);
+    --color-1-t:rgba(255, 255, 255, 0.9);
 
     --transp-black:rgba(0, 0, 0, 0.7);
-    --white:white;    
+    --white:#ffffff;    
     
     --card-border: var(--color-2);
     --card-icons-bg:black;
@@ -29,11 +29,19 @@ html{
 }
 
 body{
-    background-color: whitesmoke;
     margin:0;
     padding: 0;
     overflow-x: hidden;
 }
+
+#particles-js{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -100;
+}
+
 
 header{
     min-width: 100%;
@@ -201,6 +209,12 @@ section > .titulo{
     background-color: var(--card-border);
     padding-top: 5px;
     transform: translateY(-5px);
+}
+
+.typeIcon > span{
+    font-size: 1.25em !important;
+    transform: translateY(20%);
+    margin-right: .1em;
 }
 
 .descricao{

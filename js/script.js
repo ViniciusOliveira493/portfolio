@@ -23,3 +23,9 @@ window.onload = async function () {
         conteinerCourse.appendChild(element.draw());
     });
 }
+
+/*
+particlesJS.load('particles-js', './js/libs/particlejs/particlesjs-config.json',function() {
+    
+});
+*/

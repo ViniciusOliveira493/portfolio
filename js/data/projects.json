@@ -39,6 +39,16 @@
             ,"gitLink":"github.com/ViniciusOliveira493/portfolio"
             ,"deployLink":""
             ,"priority":"10"
+        },
+        {
+            "type":"game"
+            ,"name":"Pong"
+            ,"image":"pong.webp"
+            ,"tecs":["java"]
+            ,"description":"Jogo criado usando java com a biblioteca swing"
+            ,"gitLink":"github.com/ViniciusOliveira493/POO_JogoPong"
+            ,"deployLink":""
+            ,"priority":"9.9"
         }
     ]
 
