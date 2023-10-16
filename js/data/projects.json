@@ -9,8 +9,8 @@
             ,"gitLink":"github.com/ViniciusOliveira493/eventos"
             ,"deployLink":"viniciusoliveira493.github.io/eventos"
             ,"priority":"1"
-        },
-        {
+        }
+        ,{
             "type":"front"
             ,"name":"Clima"
             ,"image":"clima.webp"
@@ -19,8 +19,8 @@
             ,"gitLink":"github.com/ViniciusOliveira493/clima"
             ,"deployLink":"viniciusoliveira493.github.io/clima/"
             ,"priority":"1"
-        },
-        {
+        }
+        ,{
             "type":"front"
             ,"name":"Busca CEP"
             ,"image":"cep.webp"
@@ -29,8 +29,8 @@
             ,"gitLink":"github.com/ViniciusOliveira493/consultacep"
             ,"deployLink":"viniciusoliveira493.github.io/consultacep/"
             ,"priority":"1"
-        },
-        {
+        }
+        ,{
             "type":"front"
             ,"name":"Portfólio"
             ,"image":"portfolio.webp"
@@ -39,8 +39,8 @@
             ,"gitLink":"github.com/ViniciusOliveira493/portfolio"
             ,"deployLink":""
             ,"priority":"10"
-        },
-        {
+        }
+        ,{
             "type":"game"
             ,"name":"Pong"
             ,"image":"pong.webp"
@@ -48,9 +48,17 @@
             ,"description":"Jogo criado usando java com a biblioteca swing"
             ,"gitLink":"github.com/ViniciusOliveira493/POO_JogoPong"
             ,"deployLink":""
+            ,"priority":"9.8"
+        }
+        ,{
+            "type":"front"
+            ,"name":"Pokédex"
+            ,"image":"pokedex.webp"
+            ,"tecs":["html5","css3","javascript"]
+            ,"description":"Pokédex criada utilizando HTML, CSS e JavaScript com consulta a pokéAPI para listar os pokémons"
+            ,"gitLink":"github.com/ViniciusOliveira493/Pokedex-Web/"
+            ,"deployLink":"viniciusoliveira493.github.io/Pokedex-Web/"
             ,"priority":"9.9"
         }
-    ]
-
-    
+    ]    
 }
