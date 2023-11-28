@@ -60,5 +60,25 @@
             ,"deployLink":"viniciusoliveira493.github.io/Pokedex-Web/"
             ,"priority":"9.9"
         }
+        ,{
+            "type":"game"
+            ,"name":"Jogo da Memória"
+            ,"image":"memory.webp"
+            ,"tecs":["html5","css3","javascript"]
+            ,"description":"Jogo da memória criado utilizando HTML, CSS e JavaScript, foi desenvolvido durante o bootcamp 'Potência Tech iFood - Desenvolvimento de Jogos' da DIO"
+            ,"gitLink":"github.com/ViniciusOliveira493/GAME-Memory"
+            ,"deployLink":"viniciusoliveira493.github.io/GAME-Memory/"
+            ,"priority":"0.7"
+        }
+        ,{
+            "type":"game"
+            ,"name":"Jogo da Marmota"
+            ,"image":"mole.webp"
+            ,"tecs":["html5","css3","javascript"]
+            ,"description":"Jogo desenvolvido utilizando  HTML, CSS e JavaScript, durante o bootcamp 'Potência Tech iFood - Desenvolvimento de Jogos' da DIO"
+            ,"gitLink":"github.com/ViniciusOliveira493/GAME_whack-a-mole/"
+            ,"deployLink":"viniciusoliveira493.github.io/GAME_whack-a-mole/"
+            ,"priority":"0.7"
+        }
     ]    
 }
