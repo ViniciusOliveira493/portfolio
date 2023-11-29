@@ -298,6 +298,41 @@ section > .titulo{
     text-decoration: underline;
 }
 
+#paginacaoProjetos{
+    margin: 20px auto;
+    width: fit-content;
+    font-size: 1.5em;
+
+}
+
+#paginacaoProjetos > button{
+    background-color: transparent;
+    border: 0px solid #fff;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#paginacaoProjetos > button:hover{
+    color: var(--color-5);
+}
+
+#paginacaoProjetos > *{
+    display: inline-block;
+}
+
+.pageNumber{
+    margin: 0 5px;
+}
+
+.active{
+    color: var(--color-2);
+}
+
+.pageNumber:hover{
+    color: var(--color-5);
+    cursor: pointer;
+}
+
 #secFormacoes{
     padding: 1em;
     max-height: 50vh;
@@ -366,7 +401,16 @@ footer a:hover {
 }
 
 .material-symbols-outlined {
-    font-size: medium !important;
+    font-size: medium;
+    transform: translateY(15%);
+}
+
+#particles-js > canvas{
+    display: flex;
+}
+
+#particles-js.off > canvas{
+    display: none;
 }
 
 @media (max-width:715px) {
