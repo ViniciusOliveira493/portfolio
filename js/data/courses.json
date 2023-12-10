@@ -43,6 +43,13 @@
             ,"priority":0
         }
         ,{
+            "name":"Bootcamp Decola Tech 2024"
+            ,"institution":"DIO"
+            ,"startDate":""
+            ,"endDate":""
+            ,"priority":0.1
+        }
+        ,{
             "name":"Versionamento de Código com Git e GitHub"
             ,"institution":"DIO"
             ,"startDate":""
