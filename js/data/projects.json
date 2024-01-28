@@ -80,5 +80,15 @@
             ,"deployLink":"viniciusoliveira493.github.io/GAME_whack-a-mole/"
             ,"priority":"0.7"
         }
+        ,{
+            "type":"front"
+            ,"name":"Tela de Login"
+            ,"image":"login.webp"
+            ,"tecs":["html5","css3"]
+            ,"description":"Tela de Login responsiva criada com base no último exercício do módulo 4 do curso HTML5 e CSS3, realizado no site do curso em vídeo."
+            ,"gitLink":"github.com/ViniciusOliveira493/TelaLogin"
+            ,"deployLink":"viniciusoliveira493.github.io/TelaLogin/"
+            ,"priority":"0.9"
+        }
     ]    
 }

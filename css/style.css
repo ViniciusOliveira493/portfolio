@@ -42,7 +42,6 @@ body{
     z-index: -100;
 }
 
-
 header{
     min-width: 100%;
     min-height: 50px;
@@ -355,6 +354,16 @@ section > .titulo{
 #secFormacoes > #listaFormacoes{
     overflow-y: auto;
     max-height: 40vh;
+}
+
+#secFormacoes a{
+    text-decoration: none;
+    color: var(--color-3);
+}
+
+#secFormacoes a:hover{
+    text-decoration: underline;
+    color: var(--color-1);
 }
 
 footer{
