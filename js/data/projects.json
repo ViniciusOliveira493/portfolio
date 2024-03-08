@@ -90,5 +90,15 @@
             ,"deployLink":"viniciusoliveira493.github.io/TelaLogin/"
             ,"priority":"0.9"
         }
+        ,{
+            "type":"front"
+            ,"name":"ToolBox Online"
+            ,"image":"tools.webp"
+            ,"tecs":["html5","css3","javascript"]
+            ,"description":"Site criado com HTML, CSS e JavaScript que possui algumas ferramentas, como inversor de texto, calculadora e contador de caracteres"
+            ,"gitLink":""
+            ,"deployLink":"toolboxnline.vercel.app/"
+            ,"priority":"2"
+        }
     ]    
 }

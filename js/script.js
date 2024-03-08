@@ -111,7 +111,7 @@ setTimeout(() => {
     particlesJS.load('particles-js', './js/libs/particlejs/particlesjs-config.json',function() {
             
     });
-}, 3000);
+}, 10000);
 
 window.addEventListener("keydown",function (e) {
     state.trigger += e.key;
