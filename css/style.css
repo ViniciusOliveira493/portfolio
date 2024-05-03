@@ -20,6 +20,7 @@
     --white-text:white;
     --black-text:black;
 }
+
 *{
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -94,7 +95,7 @@ main > section{
     background-color: var(--color-1-t);
     box-shadow: 7px 10px 10px 5px rgba(14, 0, 0, 0.4);
     margin: 15% 0;
-    padding: 1em;
+    padding: .7em;
     border-radius: 20px;
     overflow: hidden;
 }
@@ -111,6 +112,7 @@ section > .titulo{
 .none{
     display: none;
 }
+
 .circle{
     border-radius: 50%;
 }
@@ -162,6 +164,7 @@ section > .titulo{
 #txtApresentacao > p{
     font-size: 1.5em;
 }
+
 #divTecnologias > h1{
     margin: 0;
     margin-top: 1em;
@@ -183,8 +186,8 @@ section > .titulo{
 }
 
 .card{
-    width: 250px;
-    height: 350px;
+    width: 200px;
+    height: 300px;
     background-color: black;
     border-radius: 20px;
     padding: 0;
@@ -201,100 +204,64 @@ section > .titulo{
 }
 
 .typeIcon{
+    background-color: var(--color-3);
     display: block;
-    padding-left: .5em;
-    font-size: 1.3em;
-    font-weight: bold;
-    background-color: var(--card-border);
-    padding-top: 5px;
-    transform: translateY(-5px);
-}
-
-.typeIcon > span{
-    font-size: 1.25em !important;
-    transform: translateY(20%);
-    margin-right: .1em;
+    text-align: center;
+    padding: 10px;
+    margin-top: -10px;
+    
 }
 
 .descricao{
-    padding: 0;
-    height: 80%;
-    transform: translateY(-5px);
+    display: block;
+    height: 75%;
+    text-align: justify;
+    overflow: auto;
+}
+
+.descricao > *{
+    display: none;
+    padding: 5px;
+    
 }
 
 .descricao:hover{
     background-color: var(--transp-black);
-    color: var(--white-text);
 }
 
-.descricao > div{
-    display: none;
-}
-
-.descricao:hover > div{
-    display: inline-block;
-    float: left;
-    padding: 1em;
-}
-
-.descricao > .tecIcons{
-    width: 3%;
-    height: 100%;
-    background-color: var(--card-icons-bg);
-    overflow: hidden;    
-}
-
-.tecIcons > span{
+.descricao:hover > *{
     display: block;
-    font-size: 1.2em;
-    margin-left: 5px;
-    margin-bottom: 5px;
-    transform: translateX(-10px);
-}
-
-.descricao > .descText{
-    width: 78%;
-    padding: .3em !important;
-    padding-left: 5px;
-    overflow: hidden;
-    text-align: justify;
 }
 
 .cardLinks{
+    background-color: var(--color-3);
+    display: block;
+    position: relative;
+    bottom: 0;    
     padding: 10px 0;
-    padding-bottom: 15px;
-    width: 100%;
-    background-color: var(--card-border);
-    transform: translateY(-5px);   
-
-}
-
-.cardLinks a{ 
-    padding: 0 5%;
-    text-decoration: none;
-    color: var(--white-text);
-    font-weight: bolder;
-    font-size: 1.2em;
-    
-}
-
-@-moz-document url-prefix() {
-    .cardLinks a{ 
-        font-size: 1em;    
-    }
-}
-
-.cardLinks > div{
-    margin: 0;
-    padding: 0;
-    margin: auto;
-    width: 70%;
     text-align: center;
 }
 
-.cardLinks a:hover{ 
-    color: var(--link-hightlight-white);
-    text-decoration: underline;
+.cardLinks a{
+    color: white;
+    padding: 0 1em;
+    text-align: center;
+    text-decoration: none;
+}
+
+.cardLinks a:hover{
+    color: var(--black-text);
+    font-weight: bold;
+}
+
+.tecIcons{
+    padding: 10px 0;
+    text-align: center;
+    background-color: var(--black-text);
+}
+
+.tecIcons > *{
+    padding: 3px;
 }
 
 #paginacaoProjetos{
