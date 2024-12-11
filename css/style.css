@@ -134,6 +134,11 @@ section > .titulo{
     background-repeat: no-repeat;
 }
 
+.icon > img{
+    width: 2.5em;
+    height: 2.5em;
+}
+
 #secApresentacao > section{
     width: 50%;
     display: inline-block;
@@ -173,7 +178,8 @@ section > .titulo{
 #divTecnologias abbr{
     text-decoration: none;
     cursor: help;
-    margin: 0 5px;
+    margin: 5px;
+    display: inline-block;
 }
 
 #divTecnologias span{
@@ -215,7 +221,7 @@ section > .titulo{
 .descricao{
     display: block;
     height: 75%;
-    text-align: justify;
+    text-align: left;
     overflow: auto;
 }
 
@@ -336,10 +342,8 @@ section > .titulo{
 footer{
     background-color: black;
     padding: 1em;
-    padding-bottom: 2em;
-    height: 50px;
-    width: 100%;
-    
+    min-height: 100px;
+    width: 100%;    
 }
 
 footer > div {
@@ -355,17 +359,7 @@ footer > div > a {
     color: var(--white-text);
     display: block;
     text-decoration: none;
-    margin: 1px 0;
-    margin-right: 5px;
-    font-size: 1.1em;
-}
-
-footer > div > p {
-    color: var(--white-text);
-    display: block;
-    text-decoration: none;
-    margin: 0;
-    margin-right: 5px;
+    padding-bottom: .5em;
     font-size: 1.1em;
 }
 

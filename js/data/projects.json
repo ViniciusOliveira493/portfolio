@@ -8,7 +8,7 @@
             ,"description":"Site criado com HTML, CSS e JavaScript que conta o tempo restante para um determinado evento acontecer, entre os eventos cadastrados estão a BGS, Campus Party, Bienal do Livro, Comic Con Experience e Anime Friends"
             ,"gitLink":"github.com/ViniciusOliveira493/eventos"
             ,"deployLink":"viniciusoliveira493.github.io/eventos"
-            ,"priority":"1"
+            ,"priority":"3"
         }
         ,{
             "type":"front"
@@ -18,7 +18,7 @@
             ,"description":"Site criado com HTML, CSS e JavaScript que consulta a API do openweather e exibe o clima atual e previsão para os próximos dias na localização do usuário ou em uma cidade pesquisada por meio da barra de busca"
             ,"gitLink":"github.com/ViniciusOliveira493/clima"
             ,"deployLink":"viniciusoliveira493.github.io/clima/"
-            ,"priority":"1"
+            ,"priority":"2"
         }
         ,{
             "type":"front"
@@ -48,7 +48,7 @@
             ,"description":"Jogo criado usando java com a biblioteca swing"
             ,"gitLink":"github.com/ViniciusOliveira493/POO_JogoPong"
             ,"deployLink":""
-            ,"priority":"9.8"
+            ,"priority":"8"
         }
         ,{
             "type":"front"
@@ -58,7 +58,7 @@
             ,"description":"Pokédex criada utilizando HTML, CSS e JavaScript com consulta a pokéAPI para listar os pokémons"
             ,"gitLink":"github.com/ViniciusOliveira493/Pokedex-Web/"
             ,"deployLink":"viniciusoliveira493.github.io/Pokedex-Web/"
-            ,"priority":"9.9"
+            ,"priority":"2"
         }
         ,{
             "type":"game"
@@ -97,8 +97,18 @@
             ,"tecs":["html5","css3","javascript"]
             ,"description":"Site criado com HTML, CSS e JavaScript que possui algumas ferramentas, como inversor de texto, calculadora e contador de caracteres"
             ,"gitLink":""
-            ,"deployLink":"toolboxnline.vercel.app/"
-            ,"priority":"2"
+            ,"deployLink":"toolboxonline.vercel.app/"
+            ,"priority":"9"
+        }
+        ,{
+            "type":"front"
+            ,"name":"Site Egressos"
+            ,"image":"egressos.webp"
+            ,"tecs":["html5","css3","javascript","bootstrap","php","laravel","mysql"]
+            ,"description":"Site que tem o objetivo de cadastrar e exibir o perfil dos alunos egressos da fatec zona leste, permitindo que informações como curso realizado, contatos públicos e feedback do aluno sejam consultados por pessoas interessadas no histórico desses alunos e da faculdade. <br><br> As tecnologias usadas nesse projeto foram HTML, CSS, JS, Bootstrap, PHP, Laravel e MySQL"
+            ,"gitLink":""
+            ,"deployLink":"fateczl.app.br"
+            ,"priority":"10"
         }
     ]    
 }
