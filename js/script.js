@@ -1,11 +1,14 @@
-import { Project } from "./model/Project.js";
 import { ProjectController } from "./controller/ProjectController.js";
-
-import { Course } from "./model/Course.js";
+import { ExperienceController } from "./controller/ExperienceController.js";
 import { CourseController } from "./controller/CourseController.js";
 
+import { Course } from "./model/Course.js";
+import { Project } from "./model/Project.js";
+import { Experience } from "./model/Experience.js";
+
+
 const state = {
-    particles : false
+    particles : true
     ,trigger : ""
     ,projects:""
     ,projectPage:1
@@ -25,6 +28,13 @@ window.onload = async function () {
     conteinerCourse.innerHTML = "";
     courses.forEach(element => {
         conteinerCourse.appendChild(element.draw());
+    });
+
+    let ctrlExp = new ExperienceController();
+    let exps = await ctrlExp.findAll();
+    let containerExps = document.getElementById("listaExperiencia")
+    exps.forEach(element => {
+        containerExps.appendChild(element.draw());
     });
 
     toggleParticles();
@@ -111,7 +121,7 @@ setTimeout(() => {
     particlesJS.load('particles-js', './js/libs/particlejs/particlesjs-config.json',function() {
             
     });
-}, 10000);
+}, 10);
 
 window.addEventListener("keydown",function (e) {
     state.trigger += e.key;
@@ -126,7 +136,7 @@ function toggleParticles(){
     document.getElementById('particles-js').classList.add("off");
 
     if(state.particles){
-        document.getElementById('particles-js').classList.remove("off");
+       document.getElementById('particles-js').classList.remove("off");
     }
 
     state.particles = !state.particles;
