@@ -106,7 +106,7 @@
             ,"image":"egressos.webp"
             ,"tecs":["html5","css3","javascript","bootstrap","php","laravel","mysql"]
             ,"description":"Site que tem o objetivo de cadastrar e exibir o perfil dos alunos egressos da fatec zona leste, permitindo que informações como curso realizado, contatos públicos e feedback do aluno sejam consultados por pessoas interessadas no histórico desses alunos e da faculdade. <br><br> As tecnologias usadas nesse projeto foram HTML, CSS, JS, Bootstrap, PHP, Laravel e MySQL"
-            ,"gitLink":""
+            ,"gitLink":"github.com/Aoba-zl/Projeto_Egressos"
             ,"deployLink":"fateczl.app.br"
             ,"priority":"10"
         }
