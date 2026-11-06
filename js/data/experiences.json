@@ -5,6 +5,13 @@
             ,"institution":"Fatec Zona Leste"
             ,"startDate":"Setembro 2024"
             ,"endDate":"Dezembro 2024"
+            ,"priority":9
+        },
+        {
+            "name":"Desenvolvedor Júnior"
+            ,"institution":"VTT"
+            ,"startDate":"Novembro 2025"
+            ,"endDate":"Outubro 2026"
             ,"priority":10
         }
     ]
